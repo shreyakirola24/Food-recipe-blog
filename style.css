@@ -1,0 +1,434 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}    
+
+body {
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color:black;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #333;
+}
+.welcome {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+.welcome-content {
+    position: relative;
+    z-index: 1;
+}
+
+.welcome h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    /* display: inline-block; */
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #e65b50;
+    transform: translateY(-3px);
+}
+section {
+    padding: 60px 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.profile-section {
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-image img {
+    border-radius: 20%;
+    object-fit: cover;
+    border: 5px solid #ff6f61;
+}
+
+.profile-bio h2 {
+    color: #ff6f61;
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+
+.profile-bio p {
+    font-size: 1.4rem;
+    color: #555;
+}
+.recipes-section {
+    background-color: white;
+}
+
+.recipes-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ff6f61;
+    font-size: 3rem;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.recipe-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    padding: 15px;
+    color: #ff6f61;
+    text-align: center;
+}
+
+.recipe-card p {
+    padding: 0 15px 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.recipe-card .btn {
+    margin:15px;   
+}
+
+.cuisine-section {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.cuisine-section h2 {
+    margin-bottom: 30px;
+    color: #ff6f61;
+    font-size: 3rem;
+    font-weight: 750;
+}
+
+.cuisine-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cuisine-list li a {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 19px 25px;
+    border-radius: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.cuisine-list li a:hover {
+    background-color:grey;
+    transform:0.3s ease;
+}
+
+.blog-section {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.blog-section h2 {
+    margin-bottom: 20px;
+    color: #ff6f61;
+    font-size: 3rem;
+}
+
+.blog-section p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.blog-buttons {
+    justify-content: center;
+    gap: 20px;
+}
+
+.blog-buttons .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 18px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.blog-buttons .btn:hover {
+    background-color:#aaa;
+}
+
+.blog-buttons .btn-secondary {
+    background-color: #333;
+}
+
+.blog-buttons .btn-secondary:hover {
+    background-color: #555;
+}
+
+.reader-feedback-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.reader-feedback-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ff6f61;
+    font-size: 3rem;
+}
+
+.reader-feedback {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.reader-feedback-card {
+    background-color: #e7e2e2;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.reader-feedback-card:hover {
+    transform: translateY(-5px);
+}
+
+.reader-feedback-card img {
+    width:  150px;
+    height: 150px;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid black;
+}
+
+.reader-feedback-card p {
+    font-style: italic;
+    color: #3b3737;
+    margin-bottom: 10px;
+}
+
+.reader-feedback-card h4 {
+    color: #ff6f61;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.contact-section {
+    background-color: #0d0c0c;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    color: #ff6f61;
+    font-size: 3rem;
+}
+
+.contact-section p {
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+.contact-info {
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info li a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.contact-info li a:hover {
+    color: whitesmoke;
+}
+
+.contact-section .copyright {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .welcome h2 {
+        font-size: 3rem;
+    }
+
+    .welcome p {
+        font-size: 1.2rem;
+    }
+
+    .profile-bio h2 {
+        font-size: 2rem;
+    }
+
+    .profile-bio p {
+        font-size: 1.2rem;
+    }
+
+    .recipes-section h2,
+    .cuisine-section h2,
+    .blog-section h2,
+    .reader-feedback-section h2,
+    .contact-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .recipe-card h3,
+    .reader-feedback-card h4 {
+        font-size: 1.5rem;
+    }
+
+    .recipe-card p,
+    .reader-feedback-card p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome {
+        padding: 60px 20px;
+    }
+
+    .welcome h2 {
+        font-size: 2.5rem;
+    }
+
+    .welcome p {
+        font-size: 1rem;
+    }
+
+    .profile-bio h2 {
+        font-size: 1.8rem;
+    }
+
+    .profile-bio p {
+        font-size: 1rem;
+    }
+
+    .recipe-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .recipe-card p {
+        font-size: 0.8rem;
+    }
+
+    .reader-feedback-card h4 {
+        font-size: 1rem;
+    }
+
+    .reader-feedback-card p {
+        font-size: 0.8rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
+}
